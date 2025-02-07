@@ -734,7 +734,8 @@ margin-right: 30px;
 
     .contacto .card form input,
     .contacto .card form textarea {
-        width: 90%;
+        width: 100%;
+        height: 50px;
         max-width: none;
         margin: 0 auto;
         display: block;
@@ -776,6 +777,10 @@ margin-right: 30px;
     .faq .card ul li,
     .faq .card p {
         font-size: 20px;
+    }
+
+    .faq .card ul{
+        padding: 0;
     }
 }
 
