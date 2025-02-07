@@ -1,151 +1,142 @@
 /* ESTILOS MAIN PAGE CONTACTO */
-
 body {
     margin: 0;
     padding: 0;
 }
-
+    
 .contacto {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
 }
-
+    
 .contacto .card {
     background-color: white;
+    border-color: #d1a2dc;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(235, 19, 255, 0.308);
     padding: 30px;
     max-width: 1000px;
     width: 100%;
     text-align: center;
 }
-
+    
 .contacto .card h1 {
     color: #AA73B6;
     background-color: #FAE3FF;
+    margin-left: 250px;
+    margin-right: 250px;
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 10px;
 }
-
+    
 .contacto .card .info {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
 }
-
+    
 .contacto .card .info li {
     display: flex;
-    color: #AA73B6;
+    color: #d1a2dc;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 }
-
+    
 .contacto .card .info li i {
     color: #AA73B6;
     margin-right: 25px;
     font-weight: bold;
 }
-
+    
 .contacto .card form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
+    
 .contacto .card form label {
     font-size: 25px;
     font-weight: bold;
     color: #AA73B6;
-    text-align: left;
-}
-
+    text-align: center;
+    }
+    
 .contacto .card form input,
 .contacto .card form textarea {
-    width: 100%;
-    max-width: 800px;
     color: #985ea5;
     background-color: #faecfd;
+    width: 60%;
+    text-align: center;
+    margin-left: 210px;
+    max-width: 800px;
     border: #AA73B6;
     border-radius: 5px;
     font-size: 25px;
     font-weight: bold;
 }
-
+    
 .contacto .card form textarea {
     height: 100px;
 }
-
-.contacto .card form input:focus,
-.contacto .card form textarea:focus {
+    
+    .contacto .card form input:focus,
+    .contacto .card form textarea:focus {
     outline: none;
     border: 2px solid #AA73B6;
-    background-color: #FAE3FF; 
 }
-
-.contacto .card form input::placeholder,
-.contacto .card form textarea::placeholder {
-    color: #c08acc;
+    
+    .contacto .card form input::placeholder,
+    .contacto .card form textarea::placeholder {
+    color: #AA73B6;
     font-size: 20px;
     font-weight: bold;
 }
-
+    
 .contacto .card form button {
     background-color: #FAE3FF;
+    width: 20%;
     color: #AA73B6;
     border: none;
     padding: 10px;
+    margin-left: 400px;
     border-radius: 5px;
     font-size: 25px;
     font-weight: bold;
-}
-
-.contacto .card form button:hover {
-    background-color: #f8d6fe;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* RESPONSIVE CONTACTO */
 
-@media (min-width: 768px) {
-    .contact-section {
-    flex-direction: row;
-    gap: 50px;
-    }
-}
-
 @media (max-width: 768px) {
+    .contacto .card {
+        padding: 15px;
+    }
+
     .contacto .card h1 {
-    font-size: 25px;
+        margin: 0 auto;
+        font-size: 35px;
+        width: 80%;
     }
-}
 
-@media (max-width: 768px) {
-    .contacto .card .info li {
-    font-size: 20px;
+    .contacto .card form input,
+    .contacto .card form textarea {
+        width: 90%;
+        max-width: none;
+        margin: 0 auto;
+        display: block;
+        font-size: 18px;
     }
-}
 
-@media (max-width: 768px) {
-    .info-container {
-    width: 45%;
-    }
-}
-@media (max-width: 768px) {
-    .contact-form {
-    width: 45%;
-    }
-}
-@media (max-width: 768px) {
-    .contactoMapa iframe {
-    width: 70%;
-    height: 350px;
+    .contacto .card form button {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
     }
 }

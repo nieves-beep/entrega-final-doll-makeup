@@ -1,5 +1,4 @@
 /* ESTILOS PAGE FAQ */
-
 .faq {
     display: flex;
     justify-content: center;
@@ -8,16 +7,18 @@
     margin: 0;
     padding: 20px;
 }
-
+    
 .faq .card {
     background-color: #FFFFFF;
+    border-color: #d1a2dc;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(6, 6, 6, 0.1);
+    box-shadow: 0 4px 6px rgba(235, 19, 255, 0.308);
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
+    text-align: center;
 }
-
+    
 .faq .card h1 {
     color: #AA73B6;
     background-color: #FAE3FF;
@@ -25,37 +26,72 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    margin-left: 110px;
+    margin-right: 110px;
     padding: 10px;
     border-radius: 5px;
 }
-
+    
 .faq .card h2 {
     color: #AA73B6;
     background-color: #FAE3FF;
+    display: inline-block;
     font-size: 32px;
     font-weight: bold;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    margin-left: 270px;
+    margin-right: 270px;
 }
-
+    
 .faq .card ul {
     color: #AA73B6;
     text-align: center;
 }
-
+    
 .faq .card ul li {
     color: #d1a2dc;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
-
+    
 .faq .card p {
     color: #d1a2dc;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
-
+    
 .faq .card .nota {
     color: #AA73B6;
+}
+
+/*RESPONSIVE FAQ */
+
+@media (max-width: 768px) {
+    .faq {
+        padding: 15px;
+    }
+
+    .faq .card {
+        padding: 15px;
+    }
+
+    .faq .card h1 {
+        font-size: 40px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .faq .card h2 {
+        font-size: 24px;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .faq .card ul li,
+    .faq .card p {
+        font-size: 20px;
+    }
 }

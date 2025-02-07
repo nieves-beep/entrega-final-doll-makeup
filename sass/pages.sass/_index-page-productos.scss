@@ -1,105 +1,13 @@
-/* ESTILOS MAIN INDEX */
-
-.banner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.banner img {
-    width: 25%;
-    height: auto;
-    max-width: 250px;
-}
-
-/* ESTILOS CATEGORÍAS */
-
-.categorias {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FAE3FF;
-    margin: 30px auto;
-    border-radius: 200px;
-    padding-top: 10px;
-    max-width: 700px;
-    max-height: 40px;
-    
-}
-
-.categorias p {
-    color: #AA73B6;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px;
-    white-space: nowrap;
-}
-
-.categorias ul {
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-}
-
-.categorias ul li {
-    margin-right: 20px;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.categorias a {
-    color: #AA73B6;
-    text-decoration: none;
-}
-
-/* ESTILOS CATEGORÍAS MAIN INDEX Y PAGE PRODUCTOS */
-
-.btn-category {
-    background-color: #FAE3FF;
-    color: #AA73B6;
-    font-weight: bold; 
-    border-radius: 5px; 
-    font-size: 25px;
-    transition: transform 0.3s ease;
-}
-
-.btn-category:hover {
-    background-color: #f8d6fe;
-    color: #AA73B6;
-    transform: scale(1.05);
-}
-
-.btn-category-arrow {
-    background-color: #AA73B6; 
-    color: #FAE3FF; 
-    border: none;
-    font-size: 25px;
-    border-radius: 5px;
-    padding: 10px 15px;
-}
-
-.btn-category-arrow:hover {
-    background-color: #FAE3FF; 
-    color: #AA73B6;  
-}
-
 /* ESTILOS PRODUCTOS INDEX Y PAGE PRODUCTOS */
-
 .productos {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     max-width: 1200px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
     justify-content: space-between;
 }
-
+    
 .titProductos {
     color: #AA73B6;
     background-color: #FAE3FF;
@@ -109,13 +17,13 @@
     margin-left: 200px;
     border-radius: 10px;
 }
-
+    
 .productos__card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     width: 30%;
+    min-height: 350px;
     box-sizing: border-box;
     padding: 10px;
     background-color: #fff;
@@ -124,24 +32,26 @@
     box-shadow: 0 2px 5px rgba(236, 76, 183, 0.1);
     transition: transform 0.3s ease;
 }
-
+    
 .productos__card img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover; 
     border-radius: 8px;
 }
-
+    
 .productos__card h2 {
     color: #AA73B6;
     font-size: large;
     text-align: left;
-    margin-top: 10px;
+    margin: 10px 0;
+    min-height: 40px; 
 }
-
+    
 .productos__card:hover {
     transform: scale(1.05);
 }
-
+    
 .maquillaje--btn {
     height: 50px;
     color: #AA73B6;
@@ -152,18 +62,15 @@
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: auto; 
     border: none;
 }
-
+    
 .maquillaje--btn:hover {
     background-color: #f8d6fe;
 }
-
-/* ESTILOS BTN VER TODOS LOS PRODUCTOS */
-
+    
+    /* ESTILOS BTN VER TODOS LOS PRODUCTOS */
 .productos--btn {
     display: flex;
     justify-content: center;
@@ -171,7 +78,7 @@
     width: 100%;
     margin-top: 20px;
 }
-
+    
 .productos--btn a {
     display: inline-block;
     color: #AA73B6;
@@ -184,11 +91,12 @@
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+    
 .productos--btn a:hover {
     background-color: #f8d6fe;
     transform: scale(1.05);
 }
+    
 
 /* RESPONSIVE MAIN INICIO */
 @media (max-width: 768px) {
@@ -204,34 +112,71 @@
 
 /* BTN CATEGORIAS RESPONSIVE */
 @media (max-width: 768px) {
+    .categorias {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        max-height: none; 
+        border-radius: 20px; 
+    }
+
+    .categorias p {
+        font-size: 22px; 
+        padding: 10px;
+    }
+
+    .categorias ul {
+        flex-wrap: wrap; 
+        justify-content: center;
+        padding: 0;
+    }
+
+    .categorias ul li {
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
     .btn-category {
-    font-size: 16px;
+        font-size: 20px;
+        padding: 8px 12px;
     }
-}
-@media (max-width: 768px) {
+
     .btn-category-arrow {
-    font-size: 16px;
+        font-size: 20px;
+        padding: 8px 10px;
     }
 }
+
+/* RESPONSIVE PRODUCTOS */
+
 @media (max-width: 768px) {
+    .productos {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .productos__card {
+        width: 45%; 
+        aspect-ratio: 1 / 1; 
+    }
+
+    .productos__card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .titProductos {
-    text-align: left;
-    margin-left: 5px;
-    font-size: 22px;
+        font-size: 22px;
+        margin-left: 20px;
+        text-align: center;
+        width: 80%;
     }
-}
-@media (max-width: 767px) {
-    .productos__card {
-    width: 45%;
-    }
-}
-@media (max-width: 479px) {
-    .productos__card {
-    width: 48%;
-    }
-}
-@media (max-width: 479px) {
+
     .maquillaje--btn {
-    font-size: 16px;
+        font-size: 18px;
+        padding: 8px 15px;
     }
 }
