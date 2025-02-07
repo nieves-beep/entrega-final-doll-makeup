@@ -235,11 +235,13 @@ color: #AA73B6;
 font-weight: bold;
 border-radius: 5px;
 font-size: 25px;
+transition: transform 0.3s ease;
 }
 
 .btn-category:hover {
 background-color: #f8d6fe;
 color: #AA73B6;
+transform: scale(1.05);
 }
 
 .btn-category-arrow {
@@ -273,7 +275,7 @@ background-color: #FAE3FF;
 padding: 15px;
 font-size: 30px;
 font-weight: bold;
-margin-left: 70px;
+margin-left: 200px;
 border-radius: 10px;
 }
 
