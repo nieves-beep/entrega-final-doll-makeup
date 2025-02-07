@@ -95,7 +95,7 @@ body {
     .contacto .card form input::placeholder,
     .contacto .card form textarea::placeholder {
     color: #AA73B6;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
     
@@ -110,6 +110,10 @@ body {
     font-size: 25px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto .card form button:hover{
+    transform: scale(1.05);
 }
 
 /* RESPONSIVE CONTACTO */
