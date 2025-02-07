@@ -428,7 +428,7 @@ border-color: #d1a2dc;
 border-radius: 10px;
 box-shadow: 0 4px 6px rgba(235, 19, 255, 0.308);
 padding: 20px;
-max-width: 1200px;
+max-width: 1000px;
 width: 100%;
 align-items: center;
 padding-left: 180px;
@@ -507,7 +507,7 @@ border-color: #d1a2dc;
 border-radius: 10px;
 box-shadow: 0 4px 6px rgba(235, 19, 255, 0.308);
 padding: 20px;
-max-width: 1200px;
+max-width: 1000px;
 width: 100%;
 text-align: center;
 }
