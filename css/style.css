@@ -709,8 +709,12 @@ margin-right: 30px;
         width: 80%;
     }
 
+    .productos__card h2 {
+        font-size: 15;
+    }
+
     .maquillaje--btn {
-        font-size: 18px;
+        font-size: 15px;
         padding: 8px 15px;
     }
 }
