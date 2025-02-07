@@ -1,0 +1,10 @@
+@use "presets/reset";
+@use "presets/header";
+@use "presets/footer";
+
+/* PAGES */
+
+@use "pages-sass/index-page-productos";
+@use "pages-sass/page-contacto";
+@use "pages-sass/page-envios";
+@use "pages-sass/page-faq";
