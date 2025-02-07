@@ -811,6 +811,10 @@ margin-right: 30px;
         font-size: 20px;
     }
 
+    .envios ul {
+        padding: 0;
+    }
+
     .envios a,
     .envios i {
         font-size: 25px;
